@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Book Store Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Books</a></li>
+                <li><a href="author.html">Authors</a></li>
+                <li><a href="genre.html">Genres</a></li>
+                <li><a href="cart.html">Carts</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="searchBox">
+        <input class="searchInput" id="searchInput" type="search" placeholder="Search by title, author, or genre">
+        <button class="searchButton" id="searchButton">Search</button>
+    </div>
+    <main>
+        <section id="books">
+            <h2 style="text-align: center;">Books</h2>
+            <button id="add-book-btn" style="text-align: center; margin-left: 45%;">Add Book</button>
+            <div id="add-book-form" style="display: none;">
+                <form id="add-book-form-content">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required name="title"><br><br>
+
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required name="author"><br><br>
+
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" required name="genre"><br><br>
+
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" required name="price"><br><br>
+
+                    <label for="stock">Stock Quantity:</label>
+                    <input type="number" id="stock" required name="stockQuantity"><br><br>
+
+                    <label for="Publishdate">Publishdate:</label>
+                    <input type="date" id="Publishdate" required name="Publishdate"><br><br>
+
+                    <button id="add-book-submit">Add</button>
+                    <button id="add-book-cancel">Cancel</button>
+                </form>
+            </div>
+
+            <!-- Container for books list -->
+            <div id="books-list"></div>
+            
+            <div id="pagination-controls">
+                <button id="prev-btn" disabled>Previous</button>
+                <span id="current-page">Page 1</span>
+                <button id="next-btn">Next</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

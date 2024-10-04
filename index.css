@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#quantity{
+    height: 80px;
+    width: 80PX;
+}
+#books-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 80px;
+    margin: 30px;
+}
+.searchInput{
+    background-color: aqua;
+    color: black;
+}
+.book-container {
+    border: 1px solid #d15757;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(213, 54, 141, 0.1);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.book-container h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.book-container p {
+    margin: 5px 0;
+}
+
+.book-container button {
+    margin-right: 10px;
+}
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+  }
+  /*button pressing effect*/
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }  
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    color: white;
+    background-color: #007bff; /* Example active color */
+    border-radius: 5px;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.searchInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.searchInput:focus {
+    border-color: #333;
+}
+
+.searchButton {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: #555;
+}
+
+.InputContainer {
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+  
+  .input {
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+  }
+  
+  .out-of-stock {
+    background-color: red;
+    color: white;
+    cursor: not-allowed; /* Optional: Change cursor to indicate non-clickable */
+}
+header {
+    background: linear-gradient(#e66465, #9198e5);  
+      color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
